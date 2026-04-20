@@ -14,7 +14,7 @@ const CreateTask = () => {
     const submitHandler = (e) => {
         e.preventDefault()
 
-        // ✅ create task object directly (NO useState)
+        // create task object directly (NO useState)
         const taskObj = {
             taskTitle,
             taskDescription,
@@ -43,10 +43,10 @@ const CreateTask = () => {
             return elem
         })
 
-        // ✅ update context
+        //  update context
         setUserData(updatedData)
 
-        // ✅ update localStorage (VERY IMPORTANT)
+        //  update localStorage (VERY IMPORTANT)
         localStorage.setItem('employees', JSON.stringify(updatedData))
 
         // reset form
